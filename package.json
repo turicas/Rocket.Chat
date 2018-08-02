@@ -60,7 +60,8 @@
 		"chat"
 	],
 	"scripts": {
-		"start": "meteor npm i && meteor",
+		"postinstall": "meteor npm i",
+		"start": "meteor",
 		"debug": "meteor run --inspect",
 		"debug-brk": "meteor run --inspect-brk",
 		"lint": "eslint .",
